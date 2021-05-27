@@ -1,0 +1,13 @@
+module Codegen2;
+var 
+    a, b : integer;
+begin
+a := 2;
+b := 3;
+a := (3*b)+ a + 2*b/2 - 1;  {The result: 13}
+writeln("The value of 'a' is now: ");
+writeln(a);
+b := (a+2)*5;  {The result: 15*5 = 75}
+writeln("B is now: ");
+writeln(b)
+end. 

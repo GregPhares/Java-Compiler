@@ -1,0 +1,31 @@
+-1|c|i|-1
+1|c|i|1
+Codegen2|p|i|0
+REDO|l|i|29
+a|v|i|0
+b|v|i|0
+3|c|i|3
+5|c|i|5
+@0|v|i|0
+@1|v|i|0
+2|c|i|2
+8|c|i|8
+@2|v|i|0
+a is now|c|s|a is now
+4|c|i|4
+@3|v|i|0
+A got to 4|c|s|A got to 4
+@4|v|i|0
+A less than 4|c|s|A less than 4
+A is greater than 4|c|s|A is greater than 4
+@5|v|i|0
+The value of 'a' is now:|c|s|The value of 'a' is now:
+@6|v|i|0
+@7|v|i|0
+At REDO|c|s|At REDO
+50|c|i|50
+@8|v|i|0
+b is 50, fixing it|c|s|b is 50, fixing it
+49|c|i|49
+B is now:|c|s|B is now:
+All done.|c|s|All done.

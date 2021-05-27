@@ -1,0 +1,21 @@
+compile:
+run:
+0001 
+0002 module BadProg2;
+0003 
+0004 (* This Part A test file should has one syntax error after the lexical truncation... should continue! *)
+0005 
+0006 begin
+0007 { The only statements for Part A are ASSIGNMENTS with EXPRESSIONS - long number below }
+0008 
+0009 sum:=(27.1234567890123456 *first)+ 3.14*radius*radius; (* A long number; syntax flags it and keeps going. *)
+Float length > 12, truncated 27.1234567890123456 to 27.123456789
+0010                                   
+0011 a :=(a+c)* (b-d)                ;
+0012 (* There is a double ** error below *)
+0013 quad1 := -b +(b**b) - 4 * a* c / 2*a;
+ERROR: Expected Number, Variable or '(' but found *
+ERROR: Expected ')' but found *
+ERROR: Expected END but found *
+ERROR: Expected . but found *
+Done.

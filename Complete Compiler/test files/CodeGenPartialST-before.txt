@@ -1,0 +1,40 @@
+-1|c|i|-1
+1|c|i|1
+CodegenPartial|p|i|0
+REDO|l|i|47
+a|v|i|0
+b|v|i|0
+Partial Credit File|c|s|Partial Credit File
+Phase 1:  Hello World|c|s|Phase 1:  Hello World
+Phase 2:  Assignment|c|s|Phase 2:  Assignment
+2|c|i|2
+3|c|i|3
+@0|v|i|0
+@1|v|i|0
+@2|v|i|0
+@3|v|i|0
+@4|v|i|0
+@5|v|i|0
+a is now|c|s|a is now
+Phase 3:  IF/ELSE|c|s|Phase 3:  IF/ELSE
+13|c|i|13
+@6|v|i|0
+a is 13|c|s|a is 13
+@7|v|i|0
+11|c|i|11
+@8|v|i|0
+Must not be 11|c|s|Must not be 11
+a is now 11|c|s|a is now 11
+Phase 4:  WHILE|c|s|Phase 4:  WHILE
+8|c|i|8
+@9|v|i|0
+@10|v|i|0
+Phase 5:  FOR|c|s|Phase 5:  FOR
+5|c|i|5
+@11|v|i|0
+@12|v|i|0
+The value of 'a' is now:|c|s|The value of 'a' is now:
+Phase 6:  GOTO|c|s|Phase 6:  GOTO
+This writeln is skipped!|c|s|This writeln is skipped!
+At REDO|c|s|At REDO
+All done.|c|s|All done.

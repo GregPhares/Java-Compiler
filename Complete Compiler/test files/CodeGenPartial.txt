@@ -1,0 +1,60 @@
+{This file includes the incremental parts of the
+  Part 4 Code Generation project.  To receive partial credit for
+  completing some of the project, edit out content not handled
+  below each PHASE # shown below.  Must be done incrementally, only 
+  delete BELOW a PHASE. }
+module CodegenPartial;
+label REDO;
+var 
+    a, b : integer;
+begin
+writeln("Partial Credit File");
+{Phase 1 is WRITELN("Hello World"); }
+WRITELN("Phase 1:  Hello World");
+
+{Phase 2 is assignment with an expression and write the result}
+WRITELN("Phase 2:  Assignment");
+a := 2;
+b := 3;
+a := (3*b)+ a + 2*b/2 - 1;  {The result: 13}
+writeln("a is now ");
+writeln(a);
+
+{Phase 3 is IF and IF/ELSE}
+WRITELN("Phase 3:  IF/ELSE");
+if a >= 13 then
+  begin
+  writeln("a is 13");
+  a := a-2
+  end;
+if a <> 11 then
+  writeln("Must not be 11")
+else
+  writeln("a is now 11");
+
+{ Phase 4 implements the WHILE loop }
+WRITELN("Phase 4:  WHILE");
+a := 2;
+while a < 8 do
+  begin
+  writeln("a is now ");
+  writeln(a);
+  a := a + 2
+  end;
+
+{  Phase 5 implements the FOR loop }
+WRITELN("Phase 5:  FOR");
+for a := 3 to 5 do
+  writeln(a * a); 
+writeln("The value of 'a' is now: ");
+writeln(a);
+{ Phase 6 is GOTO }
+WRITELN("Phase 6:  GOTO");
+GOTO REDO;
+WRITELN("This writeln is skipped!");
+
+REDO:  
+ writeln("At REDO");
+
+writeln("All done.")
+end. 

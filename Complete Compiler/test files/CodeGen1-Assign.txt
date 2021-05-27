@@ -1,0 +1,8 @@
+module Codegen1;
+var 
+    a : integer;
+begin
+a := 27;
+writeln("The value of 'a' is now: ");
+writeln(a)
+end. 

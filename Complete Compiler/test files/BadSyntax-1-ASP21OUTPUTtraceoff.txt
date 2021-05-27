@@ -1,0 +1,18 @@
+compile:
+run:
+0001 
+0002 module BadProg1;
+0003 
+0004 (* This Part A test file should have one syntax error! *)
+0005 
+0006 begin
+0007 { The only statements for Part A are ASSIGNMENTS with EXPRESSIONS }
+0008 
+0009 sum:=(27*first)+ 3.14*radius*radius;
+0010 
+0011 (* missing left paren below... where is it discovered? *)
+0012 a :=(a+c)*b-d)                ;
+ERROR: Expected END but found )
+ERROR: Expected . but found )
+Done.
+

@@ -1,0 +1,69 @@
+compile:
+run:
+Parsing d:\CodeGen3-While.txt
+0001 module Codegen2;
+d:\CodeGen3-While
+0002 label REDO;
+0003 var 
+0004     a, b : integer;
+0005 begin
+0006 a := 2;
+0007 while a < 8 do
+0008   begin
+0009   writeln("a is now ");
+0010   writeln(a);
+0011   if a = 4 then writeln("A got to 4")
+0012   else 
+0013     if a < 4 then writeln("A less than 4")
+0014 	else 
+0015 	    writeln("A is greater than 4");
+0016   a := a + 1
+0017   end;
+0018 writeln("The value of 'a' is now: ");
+0019 writeln(a);
+0020    b := (a+2)*5;  {The result: 10*5 = 50}
+0021 REDO:  
+0022 writeln("At REDO");
+0023 if b = 50 then
+0024   begin
+0025   writeln("b is 50, fixing it");
+0026   b := 49;
+0027   goto REDO
+0028   end;
+0029 writeln("B is now: ");
+0030 writeln(b) ;
+0031 writeln("All done.")
+0032 end. 
+Success.
+a is now 
+2
+A less than 4
+A is greater than 4
+a is now 
+3
+A less than 4
+A is greater than 4
+a is now 
+4
+A got to 4
+A is greater than 4
+a is now 
+5
+A is greater than 4
+a is now 
+6
+A is greater than 4
+a is now 
+7
+A is greater than 4
+The value of 'a' is now: 
+8
+At REDO
+b is 50, fixing it
+At REDO
+B is now: 
+49
+All done.
+Execution terminated by program STOP.
+Done.
+

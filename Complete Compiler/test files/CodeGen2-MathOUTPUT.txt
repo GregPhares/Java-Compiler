@@ -1,0 +1,25 @@
+compile:
+run:
+Parsing d:\CodeGen2-Math.txt
+0001 module Codegen2;
+d:\CodeGen2-Math
+0002 var 
+0003     a, b : integer;
+0004 begin
+0005 a := 2;
+0006 b := 3;
+0007 a := (3*b)+ a + 2*b/2 - 1;  {The result: 13}
+0008 writeln("The value of 'a' is now: ");
+0009 writeln(a);
+0010 b := (a+2)*5;  {The result: 15*5 = 75}
+0011 writeln("B is now: ");
+0012 writeln(b)
+0013 end. 
+Success.
+The value of 'a' is now: 
+13
+B is now: 
+75
+Execution terminated by program STOP.
+Done.
+

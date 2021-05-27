@@ -1,0 +1,80 @@
+compile:
+run:
+Parsing d:\CodeGen1-Assign.txt
+0001 module Codegen1;
+d:\CodeGen1-Assign
+	MODL | 	0015 | 	module
+--> Entering Program
+	IDNT | 	0050 | 	Codegen1
+	SEMI | 	0036 | 	;
+0002 var 
+	VAR_ | 	0013 | 	var
+ --> Entering Block
+  --> Entering Variabledecsec
+0003     a : integer;
+	IDNT | 	0050 | 	a
+	COLN | 	0047 | 	:
+	INTG | 	0001 | 	integer
+   --> Entering Simpletype
+	SEMI | 	0036 | 	;
+   <-- Exiting Simpletype
+0004 begin
+	BGIN | 	0011 | 	begin
+  <-- Exiting variabledecsec
+  --> Entering Blockbody
+0005 a := 27;
+	IDNT | 	0050 | 	a
+   --> Entering Statement
+    --> Entering handleAssignment
+     --> Entering Variable
+	ASGN | 	0037 | 	:=
+     <-- Exiting Variable
+	ICNS | 	0051 | 	27
+     --> Entering SimpleExpression
+      --> Entering Term
+       --> Entering Factor
+        --> Entering UnsignedConstant
+         --> Entering UnsignedNumber
+	SEMI | 	0036 | 	;
+         <-- Exiting UnsignedNumber
+        <-- Exiting UnsignedConstant
+       <-- Exiting Factor
+      <-- Exiting Term
+     <-- Exiting SimpleExpression
+    <-- Exiting handleAssignment
+   <-- Exiting Statement
+0006 writeln("The value of 'a' is now: ");
+	WRTN | 	0009 | 	writeln
+   --> Entering Statement
+    --> Entering handleWriteln
+	LPAR | 	0034 | 	(
+	SCNS | 	0053 | 	The value of 'a' is now: 
+	RPAR | 	0035 | 	)
+	SEMI | 	0036 | 	;
+    <-- Exiting handleWriteln
+   <-- Exiting Statement
+0007 writeln(a)
+	WRTN | 	0009 | 	writeln
+   --> Entering Statement
+    --> Entering handleWriteln
+	LPAR | 	0034 | 	(
+	IDNT | 	0050 | 	a
+	RPAR | 	0035 | 	)
+0008 end. 
+	END_ | 	0012 | 	end
+    <-- Exiting handleWriteln
+   <-- Exiting Statement
+	PERD | 	0048 | 	.
+  <-- Exiting Blockbody
+ <-- Exiting Block
+Success.
+<-- Exiting Program
+PC = 0000: MOV   02, 00, 01
+PC = 0001: PRINT 03, 00, 00
+The value of 'a' is now: 
+PC = 0002: PRINT 01, 00, 00
+27
+PC = 0003: STOP  00, 00, 00
+Execution terminated by program STOP.
+Done.
+

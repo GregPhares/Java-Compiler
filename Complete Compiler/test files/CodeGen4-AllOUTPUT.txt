@@ -1,0 +1,71 @@
+compile:
+run:
+Parsing CodeGen4-All.txt
+0001 module Codegen2;
+d:\CodeGen4-All
+0002 label REDO;
+0003 var 
+0004     a, b : integer;
+0005 begin
+0006 for a := 3 to 5 do
+0007   writeln(a * a);
+0008 a := 2;
+0009 while a < 8 do
+0010   begin
+0011   writeln("a is now ");
+0012   writeln(a);
+0013   if a = 4 then writeln("A got to 4")
+0014   else 
+0015     if a < 4 then writeln("A less than 4")
+0016 	else 
+0017 	    writeln("A is greater than 4");
+0018   a := a + 1
+0019   end;
+0020 writeln("The value of 'a' is now: ");
+0021 writeln(a);
+0022    b := (a+2)*5;  {The result: 10*5 = 50}
+0023 REDO:  
+0024 writeln("At REDO");
+0025 if b = 50 then
+0026   begin
+0027   writeln("b is 50, fixing it");
+0028   b := 49;
+0029   goto REDO
+0030   end;
+0031 writeln("B is now: ");
+0032 writeln(b) ;
+0033 writeln("All done.")
+0034 end. 
+Success.
+9
+16
+25
+a is now 
+2
+A less than 4
+a is now 
+3
+A less than 4
+a is now 
+4
+A got to 4
+a is now 
+5
+A is greater than 4
+a is now 
+6
+A is greater than 4
+a is now 
+7
+A is greater than 4
+The value of 'a' is now: 
+8
+At REDO
+b is 50, fixing it
+At REDO
+B is now: 
+49
+All done.
+Execution terminated by program STOP.
+Done.
+

@@ -1,0 +1,91 @@
+run:
+Parsing d:\CodeGenPartial.txt
+0001 {This file includes the incremental parts of the
+d:\CodeGenPartial
+0002   Part 4 Code Generation project.  To receive partial credit for
+0003   completing some of the project, edit out content not handled
+0004   below each PHASE # shown below.  Must be done incrementally, only 
+0005   delete BELOW a PHASE. }
+0006 module CodegenPartial;
+0007 label REDO;
+0008 var 
+0009     a, b : integer;
+0010 begin
+0011 writeln("Partial Credit File");
+0012 {Phase 1 is WRITELN("Hello World"); }
+0013 WRITELN("Phase 1:  Hello World");
+0014 
+0015 {Phase 2 is assignment with an expression and write the result}
+0016 WRITELN("Phase 2:  Assignment");
+0017 a := 2;
+0018 b := 3;
+0019 a := (3*b)+ a + 2*b/2 - 1;  {The result: 13}
+0020 writeln("a is now ");
+0021 writeln(a);
+0022 
+0023 {Phase 3 is IF and IF/ELSE}
+0024 WRITELN("Phase 3:  IF/ELSE");
+0025 if a >= 13 then
+0026   begin
+0027   writeln("a is 13");
+0028   a := a-2
+0029   end;
+0030 if a <> 11 then
+0031   writeln("Must not be 11")
+0032 else
+0033   writeln("a is now 11");
+0034 
+0035 { Phase 4 implements the WHILE loop }
+0036 WRITELN("Phase 4:  WHILE");
+0037 a := 2;
+0038 while a < 8 do
+0039   begin
+0040   writeln("a is now ");
+0041   writeln(a);
+0042   a := a + 2
+0043   end;
+0044 
+0045 {  Phase 5 implements the FOR loop }
+0046 WRITELN("Phase 5:  FOR");
+0047 for a := 3 to 5 do
+0048   writeln(a * a); 
+0049 writeln("The value of 'a' is now: ");
+0050 writeln(a);
+0051 { Phase 6 is GOTO }
+0052 WRITELN("Phase 6:  GOTO");
+0053 GOTO REDO;
+0054 WRITELN("This writeln is skipped!");
+0055 
+0056 REDO:  
+0057  writeln("At REDO");
+0058 
+0059 writeln("All done.")
+0060 end. 
+Success.
+Partial Credit File
+Phase 1:  Hello World
+Phase 2:  Assignment
+a is now 
+13
+Phase 3:  IF/ELSE
+a is 13
+a is now 11
+Phase 4:  WHILE
+a is now 
+2
+a is now 
+4
+a is now 
+6
+Phase 5:  FOR
+9
+16
+25
+The value of 'a' is now: 
+6
+Phase 6:  GOTO
+At REDO
+All done.
+Execution terminated by program STOP.
+Done.
+
