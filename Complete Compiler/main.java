@@ -1,7 +1,7 @@
 
-import ADT.SymbolTable;
-import ADT.Lexical;
-import ADT.*;
+import SymbolTable;
+import Lexical;
+import *;
 
 public class main {
 
